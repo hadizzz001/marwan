@@ -116,7 +116,7 @@ body {
 
 
 a:hover {
-  color: #398dcc !important;
+  color: #000768 !important;
   text-decoration: none;
 }
 
@@ -142,7 +142,7 @@ a:hover {
   font-family: "Lato", sans-serif;
   font-size: 12px;
   font-weight: 700;
-  background: #398dcc;
+  background: #000768;
   text-align: center;
   padding: 0 5px;
   min-width: 100%;
@@ -269,7 +269,7 @@ a:hover {
 
 
 .HtmlProductAddToCart {
-  background-color: #398dcc !important;
+  background-color: #000768 !important;
 }
 
 button:focus {
@@ -382,9 +382,14 @@ button:focus {
   margin-top:2em;
 }
 
+#myUniD{
+  height: 10em !important;
+}
+
 @media (max-width: 768px) {
   #logotoedits{
-    margin-top:initial;
+    margin-top:inherit;
+    width: 80px;
   }
   .wallet-image.desktop {
     display: none;
@@ -409,6 +414,55 @@ button:focus {
   margin-bottom: 4em;
 }
 
+.mobileNewsletter{
+  top: 38px !important;
+}
+
+#searchidz{
+  top: 18px !important;
+        position: absolute;
+        right: 3px;
+}
+
+#myUniD {
+  height: auto !important;
+}
+
+}
 
 
+
+
+
+.topzindex{
+  z-index: 9999999;
+  position: relative;
+}
+
+
+#mynewnav{
+  float: right;
+  margin-top: 3em;
+  margin-right: 12em;
+}
+
+@media (min-width: 1200px) {
+  @media (pointer: fine) {
+      .secondaryLevel {
+          top: 86px !important;
+      }
+  }
+}
+
+
+body {
+  background-color: #fff !important;
+}
+
+
+
+@media (max-width: 1199px), (pointer: coarse) {
+  .pageHeaderMenuPreHeader { 
+      height: 100px !important; 
+  }
 }

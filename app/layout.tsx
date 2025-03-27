@@ -37,13 +37,13 @@ export default function RootLayout({
   />
   <meta content="max-image-preview:large" name="robots" />
   <title>
-    Abbas Baba
+    marwan asmar
   </title>
   <meta
-    content="At Abbas Baba, we're reshaping the way businesses connect."
+    content="At marwan asmar, we're reshaping the way businesses connect."
     name="description" 
   />
-  <meta content="Abbas Baba" name="keywords" property="abbasbaba, shoes, men, women" />
+  <meta content="marwan asmar" name="keywords" property="abbasbaba, shoes, men, women" />
 
  
  

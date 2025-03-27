@@ -1,12 +1,17 @@
-"use client"
+"use client";
+
 import { useState, useEffect } from 'react';
 
-const GifLoader = () => {
-  const [showGif, setShowGif] = useState(true);
+const ImgLoader = () => {
+  const [showImage, setShowImage] = useState(true);
+  const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      setShowGif(false);
+      setFadeOut(true);  // Trigger fade-out
+      setTimeout(() => {
+        setShowImage(false);  // Remove the image after fade-out is done
+      }, 1000);  // Wait for the fade-out transition (1 second)
     }, 2000);
 
     // Cleanup the timeout when the component unmounts
@@ -14,9 +19,8 @@ const GifLoader = () => {
   }, []);
 
   return (
-    
     <>
-      {showGif && (
+      {showImage && (
         <div
           style={{
             position: 'fixed',
@@ -28,22 +32,32 @@ const GifLoader = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            zIndex:"9999999999"
+            zIndex: '9999999999',
+            opacity: fadeOut ? 0 : 1, // Apply fade-out opacity when needed
+            transition: 'opacity 1s ease-out', // Transition effect
           }}
         >
           <div
             style={{
-              width:"5em",
-              zIndex:"9999999999"
+              width: '10em', // Increased width
+              height: '10em', // Increased height (optional)
+              zIndex: '9999999999',
             }}
           >
-            <img src="/load.gif" alt="Loading" />
+            <img
+              src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743077533/ltbd3bmbq7lecu2pag7b.png"
+              alt="Loading"
+              style={{
+                width: '100%', // Ensure the image scales to fill the container
+                height: '100%', // Ensure the image scales to fill the container
+                objectFit: 'contain', // Maintain aspect ratio
+              }}
+            />
           </div>
         </div>
       )}
     </>
-
   );
 };
 
-export default GifLoader;
+export default ImgLoader;

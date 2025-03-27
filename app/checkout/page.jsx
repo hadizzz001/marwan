@@ -636,7 +636,7 @@ const page = () => {
                                     <span className="elementor-icon-list-icon">
                                       <FontAwesomeIcon
                                         icon={faCheckCircle}
-                                        style={{ color: '#398dcc', marginLeft: '10px' }}
+                                        style={{ color: '#000768', marginLeft: '10px' }}
                                       />
                                     </span>
                                     <span className="elementor-icon-list-text">
@@ -668,7 +668,7 @@ const page = () => {
                                     <span className="elementor-icon-list-icon">
                                       <FontAwesomeIcon
                                         icon={faCheckCircle}
-                                        style={{ color: '#398dcc', marginLeft: '10px' }}
+                                        style={{ color: '#000768', marginLeft: '10px' }}
                                       />
                                     </span>
                                     <span className="elementor-icon-list-text">
@@ -836,7 +836,7 @@ const page = () => {
                             <span className="elementor-icon-list-icon">
                               <FontAwesomeIcon
                                 icon={faCheckCircle}
-                                style={{ color: '#398dcc', marginLeft: '10px' }}
+                                style={{ color: '#000768', marginLeft: '10px' }}
                               />
                             </span>
                             <span className="elementor-icon-list-text">
@@ -847,7 +847,7 @@ const page = () => {
                             <span className="elementor-icon-list-icon">
                               <FontAwesomeIcon
                                 icon={faCheckCircle}
-                                style={{ color: '#398dcc', marginLeft: '10px' }}
+                                style={{ color: '#000768', marginLeft: '10px' }}
                               />
                             </span>
                             <span className="elementor-icon-list-text">
@@ -858,7 +858,7 @@ const page = () => {
                             <span className="elementor-icon-list-icon">
                               <FontAwesomeIcon
                                 icon={faCheckCircle}
-                                style={{ color: '#398dcc', marginLeft: '10px' }}
+                                style={{ color: '#000768', marginLeft: '10px' }}
                               />
                             </span>
                             <span className="elementor-icon-list-text">
@@ -869,7 +869,7 @@ const page = () => {
                             <span className="elementor-icon-list-icon">
                               <FontAwesomeIcon
                                 icon={faCheckCircle}
-                                style={{ color: '#398dcc', marginLeft: '10px' }}
+                                style={{ color: '#000768', marginLeft: '10px' }}
                               />
                             </span>
                             <span className="elementor-icon-list-text">

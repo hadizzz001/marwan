@@ -1,20 +1,12 @@
 // "use client";  
-import { useState, useEffect } from "react";
-import ProductList from './ProductList'; 
-import ProductList1 from './ProductList1'; 
-import ProductArrival from './ProductArrival'; 
-import ProductList2 from './ProductList2'; 
+import { useState, useEffect } from "react"; 
 import Contact from './Contact'; 
-import Design from './Design';
-import Review from './Review';
-import Rate from './Rate';
+import Design from './Design'; 
 import Carousel from './Carousel';
 import BrandCarousel from './BrandCarousel';
 import Image from 'next/image';
-import Catslider from './Catslider';
-import TikTokEmbed from './TikTokEmbed';
-import FacebookEmbed from './FacebookEmbed';
-import InstagramPost from './InstagramPost';
+import Catslider from './Catslider'; 
+import Video from './Video'; 
 
 
 
@@ -157,26 +149,126 @@ const Body = () => {
 
 
 
+<section className="pt-10 overflow-hidden   md:pt-0 sm:pt-16 2xl:pt-16 mt-10">
+  <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+    <div className="grid items-center grid-cols-1 md:grid-cols-2">
+      <div>
+ 
+        <p className="max-w-lg mt-3 text-xl leading-relaxed text-[#222222]  md:mt-8">
+        Marwan Asmar is a dedicated life coach passionate about helping individuals achieve personal growth and success. With a deep understanding of mindset transformation, he empowers clients to overcome challenges and reach their full potential. Through tailored coaching strategies, Marwan inspires positive change and lasting fulfillment.
+        </p>
+ 
+      </div>
+      <div className="relative">
+        <img
+          className="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2"
+          src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743106550/pgsk9zrfdfm2ilfg3pqh.webp"
+          alt=""
+        />
+        <img
+          className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
+          src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743106057/loqep1psdmvet5qvzrnn.webp"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section className="pt-10 lg:px-20 md:px-10 px-10 text-blue-950 mt-20">
+  <h2 className="text-[38px] font-bold text-center">
+    Why <span  >Choose Us</span>
+  </h2>
+  <div className="lg:flex lg:gap-5 pt-9">
+    <div className="lg:pt-2 pt-7 text-center">
+      <img
+        src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743108780/y6vuu9kan4u6jan9batq.jpg"
+        alt="Passionate Guidance"
+        className="mx-auto w-80 h-48 object-cover rounded-lg"
+      />
+      <h3 className="font-medium text-xl mt-4">PASSIONATE GUIDANCE</h3>
+      <p className="pt-3">
+        We genuinely care about your growth and success. Our coaching approach is tailored to help you unlock your full potential, overcome challenges, and build a life of purpose.
+      </p>
+    </div>
+    <div className="lg:pt-2 pt-7 text-center">
+      <img
+        src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743108779/xjc1g1m2dcunscmbo31b.jpg"
+        alt="Honest and Reliable"
+        className="mx-auto w-80 h-48 object-cover rounded-lg"
+      />
+      <h3 className="font-medium text-xl mt-4">HONEST & RELIABLE SUPPORT</h3>
+      <p className="pt-3">
+        Transparency and trust are at the core of our coaching. We provide honest feedback, practical strategies, and a safe space to help you grow with confidence.
+      </p>
+    </div>
+    <div className="lg:pt-2 pt-7 text-center">
+      <img
+        src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743108780/c5bibecio3sufsshdafd.jpg"
+        alt="Continuous Improvement"
+        className="mx-auto w-80 h-48 object-cover rounded-lg"
+      />
+      <h3 className="font-medium text-xl mt-4">CONTINUOUS IMPROVEMENT</h3>
+      <p className="pt-3">
+        Life is a journey of learning and growth. We stay committed to self-development and new coaching techniques to ensure you receive the best guidance possible.
+      </p>
+    </div>
+  </div>
+
+  {/* Small button with full rounded left & right borders */}
+  <div className="flex justify-center mt-10">
+  <button
+  className="bg-[#000768] text-white px-6 py-3 rounded-full text-large font-large"
+  onClick={() => window.location.href = 'https://wa.me/9613682289'}
+>
+  Learn More
+</button>
+
+  </div>
+</section>
+
+
+
+
+
+<Video/>
+
+
+
+
+
+
+
+
+
+
 
         <div id="usp-scroll-to"></div>
-
-        <Catslider />
-        <BrandCarousel />
-        {/* <ProductList2 /> */}
-        <ProductArrival />
-        <ProductList />
-        <ProductList1 />
+ 
         <Design />
         
-        <TikTokEmbed />
-        <FacebookEmbed />
-        <InstagramPost />
+      
 
         <style
           type="text/css"
           dangerouslySetInnerHTML={{
             __html:
-              ".sywMobileQuotes{background-color:#398dcc;padding:35px 0 0}.sywMobileQuotes__quoteIcon{max-width:35px;margin:0 auto}.sywMobileQuotes__quoteIcon img{width:100%}.sywMobileQuotes__title{text-align:center;color:#FFF;margin:25px auto 0}.sywMobileQuotes--quoteSlider{position:relative;background-color:transparent;color:#FFF;overflow:hidden;z-index:1}.sywMobileQuotes__content{text-align:center;display:flex;width:100%;overflow-x:scroll;scroll-snap-type:both mandatory;padding:15px 0 80px}.sywMobileQuotes--quoteSlider .sywQuoteSlider__slide{display:flex;flex-direction:column;justify-content:center;background-color:#398dcc;min-width:100%;scroll-snap-align:start;scroll-snap-stop:always;-webkit-overflow-scrolling:touch}.sywMobileQuotes--quoteSlider .sywQuoteSlider__slide .logo{height:15vw;max-height:25px;margin:0 auto}.sywMobileQuotes--quoteSlider .sywQuoteSlider__slide .logo>img{height:100%}.sywMobileQuotes--quoteSlider .sywQuoteSlider__slide .text{padding:10px 20px 25px;max-width:375px;margin:0 auto}.sywMobileQuotes--quoteSlider .quoteDots{position:absolute;left:50%;bottom:10px;transform:translate(-50%);z-index:10;list-style:none;padding:0}.sywMobileQuotes--quoteSlider .quoteDots__dot{display:inline;margin:0 5px;padding:0;list-style:none;cursor:pointer}.sywMobileQuotes--quoteSlider .quoteDots__dot.quote_dot_active span{background:#FFF}.sywMobileQuotes--quoteSlider .quoteDots__dot span{display:inline-block;width:12px;height:12px;border:1px solid #FFF;border-radius:50%;pointer-event:none}@media (pointer: fine){.sywMobileQuotes__content{overflow-x:hidden;padding:40px 0 100px}.sywMobileQuotes--quoteSlider .sywQuoteSlider__slide{box-sizing:content-box}}@media (min-width: 769px){.sywMobileQuotes{display:none}}\n"
+              ".sywMobileQuotes{background-color:#000768;padding:35px 0 0}.sywMobileQuotes__quoteIcon{max-width:35px;margin:0 auto}.sywMobileQuotes__quoteIcon img{width:100%}.sywMobileQuotes__title{text-align:center;color:#FFF;margin:25px auto 0}.sywMobileQuotes--quoteSlider{position:relative;background-color:transparent;color:#FFF;overflow:hidden;z-index:1}.sywMobileQuotes__content{text-align:center;display:flex;width:100%;overflow-x:scroll;scroll-snap-type:both mandatory;padding:15px 0 80px}.sywMobileQuotes--quoteSlider .sywQuoteSlider__slide{display:flex;flex-direction:column;justify-content:center;background-color:#000768;min-width:100%;scroll-snap-align:start;scroll-snap-stop:always;-webkit-overflow-scrolling:touch}.sywMobileQuotes--quoteSlider .sywQuoteSlider__slide .logo{height:15vw;max-height:25px;margin:0 auto}.sywMobileQuotes--quoteSlider .sywQuoteSlider__slide .logo>img{height:100%}.sywMobileQuotes--quoteSlider .sywQuoteSlider__slide .text{padding:10px 20px 25px;max-width:375px;margin:0 auto}.sywMobileQuotes--quoteSlider .quoteDots{position:absolute;left:50%;bottom:10px;transform:translate(-50%);z-index:10;list-style:none;padding:0}.sywMobileQuotes--quoteSlider .quoteDots__dot{display:inline;margin:0 5px;padding:0;list-style:none;cursor:pointer}.sywMobileQuotes--quoteSlider .quoteDots__dot.quote_dot_active span{background:#FFF}.sywMobileQuotes--quoteSlider .quoteDots__dot span{display:inline-block;width:12px;height:12px;border:1px solid #FFF;border-radius:50%;pointer-event:none}@media (pointer: fine){.sywMobileQuotes__content{overflow-x:hidden;padding:40px 0 100px}.sywMobileQuotes--quoteSlider .sywQuoteSlider__slide{box-sizing:content-box}}@media (min-width: 769px){.sywMobileQuotes{display:none}}\n"
           }}
         />
 
@@ -187,8 +279,7 @@ const Body = () => {
         <Contact />
          
 
-        <Review />
-        <Rate />
+ 
 
         <style
           type="text/css"

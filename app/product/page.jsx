@@ -189,9 +189,9 @@ const Page = () => {
   return (
     <>
  <Head>
-        <meta property="og:title" content="Abbas Baba" />
+        <meta property="og:title" content="marwan asmar" />
         <meta property="og:url" content="https://abbasbaba.com/" />
-        <meta property="og:site_name" content="At Abbas Baba, we're reshaping the way businesses connect." /> 
+        <meta property="og:site_name" content="At marwan asmar, we're reshaping the way businesses connect." /> 
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:type" content="website" />
@@ -368,7 +368,7 @@ const Page = () => {
                             {imgs && imgs?.length > 0 ? (
                               <>
                                 <a
-                                  href={`https://wa.me/+9613066976?text=${imgs[0]}`}
+                                  href={`https://wa.me/+9613682289?text=${imgs[0]}`}
                                   target="_blank"
                                   className="whatsapp-btn"
                                   style={{

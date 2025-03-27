@@ -23,10 +23,10 @@ export default function Home() {
       <div className="u-align-center u-container-style u-group u-group-1">
         <div className="u-container-layout u-valign-middle">
            
-          <h2 className="u-text u-text-1" style={{fontFamily: '"Manrope", sans-serif',fontWeight: "bolder",marginBottom: "1em",fontSize: "3em"}}>About Company</h2>
+          <h2 className="u-text u-text-1" style={{fontFamily: '"Manrope", sans-serif',fontWeight: "bolder",marginBottom: "1em",fontSize: "3em",lineHeight: "4rem"}}>About Marwan Asmar</h2>
           <p className="u-text u-text-2" style={{fontFamily: 'Frank Ruhl Libre, "PT Serif", "Noto Serif", "Noto Serif JP", "Noto Serif KR", "Noto Serif SC", "Noto Serif TC", ui-serif, Georgia, Cambria, Times New Roman, Times, serif',fontSize: "1.2rem",lineHeight: "2rem",fontWeight:"400"}}>
             {" "}
-            Abbasbaba is your ultimate destination for stylish shoes and more, combining comfort, quality, and trendsetting designs. We bring you a curated collection that blends fashion with functionality, ensuring you step out in confidence every day. Whether you're looking for classic footwear or the latest styles, Abbasbaba has something for everyone.
+            Marwan Asmar is a dedicated life coach passionate about helping individuals achieve personal growth and success. With a deep understanding of mindset transformation, he empowers clients to overcome challenges and reach their full potential. Through tailored coaching strategies, Marwan inspires positive change and lasting fulfillment.
           </p>
  
         </div>
@@ -84,7 +84,7 @@ export default function Home() {
   <style
   dangerouslySetInnerHTML={{
     __html:
-      "\n  .u-section-1 .u-image-1 {\n    border-color: #398dcc !important;\n    width: 170px;\n    height: 170px;\n    margin: 0 auto;\n}\n"
+      "\n  .u-section-1 .u-image-1 {\n    border-color: #000768 !important;\n    width: 170px;\n    height: 170px;\n    margin: 0 auto;\n}\n"
   }}
 />
 
