@@ -1,12 +1,9 @@
 // "use client";  
-import { useState, useEffect } from "react"; 
-import Contact from './Contact'; 
-import Design from './Design'; 
-import Carousel from './Carousel';
-import BrandCarousel from './BrandCarousel';
-import Image from 'next/image';
-import Catslider from './Catslider'; 
+import { useState, useEffect } from "react";  
+import Section from './Section';  
+import Gallery from './Gallery'; 
 import Video from './Video'; 
+import ProductList from './ProductList'; 
 
 
 
@@ -153,10 +150,15 @@ const Body = () => {
   <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
     <div className="grid items-center grid-cols-1 md:grid-cols-2">
       <div>
- 
+ <h3>Welcome to My Official Website</h3>
         <p className="max-w-lg mt-3 text-xl leading-relaxed text-[#222222]  md:mt-8">
-        Marwan Asmar is a dedicated life coach passionate about helping individuals achieve personal growth and success. With a deep understanding of mindset transformation, he empowers clients to overcome challenges and reach their full potential. Through tailored coaching strategies, Marwan inspires positive change and lasting fulfillment.
-        </p>
+        I’m Marwan Asmar, a PhD researcher in E-Government & Sustainable Development, an experienced Master Trainer and Skills Builder, and a certified Life Coach. With over 12 years of experience in the Arab countries, KSA,Emirates, Kuweit,Lebanon,Qatar,Jordan,Syria, & Canada , I’ve designed and delivered impactful training programs for corporate employees, youth, and children, empowering them with essential skills for success. My passion lies in transforming learning into action, helping individuals and organizations grow through coaching, leadership, and professional development.<br/><br/>
+I am an International Award winner in Training & development from CivilityExperts Worldwide in 2018<br/><br/>
+I created with my team the first digital politician in Lebanon and the 2nd in the world :The Robot NOUR that was candidate for the parliament elections in Lebanon 2022 <br/><br/>
+Explore my articles, publications, and books on skills development, training methodologies, and personal growth.
+Let’s connect and build a future of learning, leadership, and transformation—together.
+ 
+</p>
  
       </div>
       <div className="relative">
@@ -191,54 +193,51 @@ const Body = () => {
 
 
 <section className="pt-10 lg:px-20 md:px-10 px-10 text-blue-950 mt-20">
-  <h2 className="text-[38px] font-bold text-center">
-    Why <span  >Choose Us</span>
-  </h2>
-  <div className="lg:flex lg:gap-5 pt-9">
-    <div className="lg:pt-2 pt-7 text-center">
-      <img
-        src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743108780/y6vuu9kan4u6jan9batq.jpg"
-        alt="Passionate Guidance"
-        className="mx-auto w-80 h-48 object-cover rounded-lg"
-      />
-      <h3 className="font-medium text-xl mt-4">PASSIONATE GUIDANCE</h3>
-      <p className="pt-3">
-        We genuinely care about your growth and success. Our coaching approach is tailored to help you unlock your full potential, overcome challenges, and build a life of purpose.
-      </p>
-    </div>
-    <div className="lg:pt-2 pt-7 text-center">
-      <img
-        src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743108779/xjc1g1m2dcunscmbo31b.jpg"
-        alt="Honest and Reliable"
-        className="mx-auto w-80 h-48 object-cover rounded-lg"
-      />
-      <h3 className="font-medium text-xl mt-4">HONEST & RELIABLE SUPPORT</h3>
-      <p className="pt-3">
-        Transparency and trust are at the core of our coaching. We provide honest feedback, practical strategies, and a safe space to help you grow with confidence.
-      </p>
-    </div>
-    <div className="lg:pt-2 pt-7 text-center">
-      <img
-        src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743108780/c5bibecio3sufsshdafd.jpg"
-        alt="Continuous Improvement"
-        className="mx-auto w-80 h-48 object-cover rounded-lg"
-      />
-      <h3 className="font-medium text-xl mt-4">CONTINUOUS IMPROVEMENT</h3>
-      <p className="pt-3">
-        Life is a journey of learning and growth. We stay committed to self-development and new coaching techniques to ensure you receive the best guidance possible.
-      </p>
-    </div>
+  <h2 className="text-[38px] font-bold text-center">My Articles</h2>
+  
+  <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 pt-9">
+    {[
+      {
+        href: "https://www.mtv.com.lb/News/%D9%85%D8%AD%D9%84%D9%8A%D8%A7%D8%AA/1552300/%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9-%D9%81%D9%8A-%D9%84%D8%A8%D9%86%D8%A7%D9%86----%D9%85%D8%A7%D8%B0%D8%A7-%D9%8A%D8%AC%D8%A8-%D8%A3%D9%86-%D8%AA%D8%AA%D9%88%D9%82-%D8%B9-%D8%A3%D9%8A%D9%87%D8%A7-%D8%A7%D9%84%D9%84%D8%A8%D9%86%D8%A7%D9%86%D9%8A-",
+        imgSrc: "https://res.cloudinary.com/dea3r5dn7/image/upload/v1743165152/dwxrvtdzpee8fyiee1kw.jpg",
+        title: "السياحة الرقمية في لبنان... ماذا يجب أن تتوقّع أيها اللبناني؟",
+      },
+      {
+        href: "https://hura7.com/%d9%85%d8%b1%d9%88%d8%a7%d9%86-%d8%a7%d9%84%d8%a3%d8%b3%d9%85%d8%b1-%d9%80-%d9%85%d8%a7-%d8%a7%d9%84%d8%b0%d9%8a-%d9%8a%d8%ac%d8%a8-%d8%a3%d9%86-%d9%8a%d8%aa%d9%88%d9%82%d8%b9%d9%87-%d8%a7%d9%84%d9%85/",
+        imgSrc: "https://res.cloudinary.com/dea3r5dn7/image/upload/v1743108779/xjc1g1m2dcunscmbo31b.jpg",
+        title: "HONEST & RELIABLE SUPPORT",
+      },
+      {
+        href: "https://www.grandlb.com/politics/110968/",
+        imgSrc: "https://res.cloudinary.com/dea3r5dn7/image/upload/v1743108780/c5bibecio3sufsshdafd.jpg",
+        title: "CONTINUOUS IMPROVEMENT",
+      },
+      {
+        href: "https://www.alkalimaonline.com/news.aspx?id=825510",
+        imgSrc: "https://res.cloudinary.com/dea3r5dn7/image/upload/v1743108780/c5bibecio3sufsshdafd.jpg",
+        title: "CONTINUOUS IMPROVEMENT",
+      },
+    ].map((article, index) => (
+      <a key={index} target="_blank" href={article.href}>
+        <div className="text-center">
+          <img
+            src={article.imgSrc}
+            alt={article.title}
+            className="mx-auto w-80 h-48 object-cover rounded-lg"
+          />
+          <h3 className="font-medium text-xl mt-4">{article.title}</h3>
+        </div>
+      </a>
+    ))}
   </div>
 
-  {/* Small button with full rounded left & right borders */}
   <div className="flex justify-center mt-10">
-  <button
-  className="bg-[#000768] text-white px-6 py-3 rounded-full text-large font-large"
-  onClick={() => window.location.href = 'https://wa.me/9613682289'}
->
-  Learn More
-</button>
-
+    <button
+      className="bg-[#000768] text-white px-6 py-3 rounded-full text-large font-large"
+      onClick={() => window.location.href = 'https://wa.me/9613682289'}
+    >
+      Learn More
+    </button>
   </div>
 </section>
 
@@ -246,7 +245,11 @@ const Body = () => {
 
 
 
+
 <Video/>
+<Gallery/>
+<Section/>
+<ProductList/>
 
 
 
@@ -259,9 +262,7 @@ const Body = () => {
 
 
         <div id="usp-scroll-to"></div>
- 
-        <Design />
-        
+  
       
 
         <style
@@ -274,11 +275,7 @@ const Body = () => {
 
 
 
-
  
-        <Contact />
-         
-
  
 
         <style

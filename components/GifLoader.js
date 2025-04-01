@@ -39,8 +39,8 @@ const ImgLoader = () => {
         >
           <div
             style={{
-              width: '10em', // Increased width
-              height: '10em', // Increased height (optional)
+              width: '15em', // Increased width
+              height: '15em', // Increased height (optional)
               zIndex: '9999999999',
             }}
           >
@@ -48,8 +48,8 @@ const ImgLoader = () => {
               src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743077533/ltbd3bmbq7lecu2pag7b.png"
               alt="Loading"
               style={{
-                width: '100%', // Ensure the image scales to fill the container
-                height: '100%', // Ensure the image scales to fill the container
+                width: '150%', // Ensure the image scales to fill the container
+                height: '150%', // Ensure the image scales to fill the container
                 objectFit: 'contain', // Maintain aspect ratio
               }}
             />

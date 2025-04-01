@@ -150,10 +150,10 @@ const Body = () => {
         <header className="br_text-grey-600 br_bg-grey-100 br_p-3 br_pt-11 md:br_py-20 br_flex md:br_justify-center">
           <div className="br_text-left md:br_max-w-[600px] lg:br_max-w-[800px] md:br_text-center br_flex br_flex-col br_gap-2  md:br_gap-4 md:br_items-center">
             <h1 className="br_text-3xl-serif md:br_text-4xl-serif initial:br_text-grey-600">
-              Our Products
+            Shop My Books
             </h1>
             <p className="br_text-base-sans-stretched md:br_text-lg-sans-stretched">
-              Discover stylish products to elevate your personal and professional expression.
+            Discover my collection of books designed to empower children, youth, and adults with essential life and communication skills. From character-building stories for kids to practical guides for professionals, each book is crafted to inspire growth and confidence. Browse and order now to start your journey of learning and self-improvement!
             </p>
           </div>
         </header>

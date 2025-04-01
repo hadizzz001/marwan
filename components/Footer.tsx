@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { sendEmail } from '../app/api/sendEmail/sendEmail'
-import { TempProps1 } from "../types"; 
+import { TempProps1 } from "../types";
 
 interface CarCardProps {
     temp: TempProps1;
@@ -9,7 +9,7 @@ interface CarCardProps {
 
 
 const Footer = () => {
-    
+
     const [isFoot1, setIsFoot1] = useState(true);
     const [isFoot2, setIsFoot2] = useState(true);
     const [isFoot3, setIsFoot3] = useState(true);
@@ -153,28 +153,28 @@ const Footer = () => {
                             <li>
                                 <a
                                     target="_blank"
-                                    href="https://l.facebook.com/l.php?u=https%3A%2F%2Fx.com%2Fleadnology%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR2leWHy96N9QeRQ3GVtoIXEnIzgcg1hO7c_j5L7Oj4gDoOgufZ9o2iixrw_aem_gc2UBzM_XShdo-NiKw8c_Q&h=AT3tfyMxv64HC6jH-7aRCMuiRBZ7zKT7pVNOUUSzJ22jPJ1HDpwcDio3BQWlY_-vWuwJ4sb3iiYM9e9O8NJMRwzAv1F1B2k5ZWK7F1Qx3khqO9XytTXwtFpkyrTraNwbXsTn"
+                                    href="https://x.com/MarwanAsmaregov"
                                     data-auto-id="true"
                                     id="page-footer-http-www-instagram-com-bellroy-1"
                                 >
 
 
 
-<>
-  {/*?xml version="1.0" ?*/}
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    xmlnsXlink="http://www.w3.org/1999/xlink"
-    version="1.1"
-    id="Layer_1"
-    width="20px"
-    height="20px"
-    viewBox="0 0 24 24" 
-    xmlSpace="preserve"
-  >
-    <path d="M14.095479,10.316482L22.286354,1h-1.940718l-7.115352,8.087682L7.551414,1H1l8.589488,12.231093L1,23h1.940717  l7.509372-8.542861L16.448587,23H23L14.095479,10.316482z M11.436522,13.338465l-0.871624-1.218704l-6.924311-9.68815h2.981339  l5.58978,7.82155l0.867949,1.218704l7.26506,10.166271h-2.981339L11.436522,13.338465z" />
-  </svg>
-</>
+                                    <>
+                                        {/*?xml version="1.0" ?*/}
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                                            version="1.1"
+                                            id="Layer_1"
+                                            width="20px"
+                                            height="20px"
+                                            viewBox="0 0 24 24"
+                                            xmlSpace="preserve"
+                                        >
+                                            <path d="M14.095479,10.316482L22.286354,1h-1.940718l-7.115352,8.087682L7.551414,1H1l8.589488,12.231093L1,23h1.940717  l7.509372-8.542861L16.448587,23H23L14.095479,10.316482z M11.436522,13.338465l-0.871624-1.218704l-6.924311-9.68815h2.981339  l5.58978,7.82155l0.867949,1.218704l7.26506,10.166271h-2.981339L11.436522,13.338465z" />
+                                        </svg>
+                                    </>
 
 
 
@@ -185,31 +185,31 @@ const Footer = () => {
                             <li>
                                 <a
                                     target="_blank"
-                                    href="https://l.facebook.com/l.php?u=https%3A%2F%2Flinkedin.com%2Fin%2FMarwan%2520Asmar%2520Powers%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR2leWHy96N9QeRQ3GVtoIXEnIzgcg1hO7c_j5L7Oj4gDoOgufZ9o2iixrw_aem_gc2UBzM_XShdo-NiKw8c_Q&h=AT2n_6x3Xd-gK6RzaIH2LC4QsBXc6146fHRl3gg9R5dTxyg1YasWelJT61XN1JchiLjqq_9jU9zmn1h1fdy65nj6MNQE6vaNdNWWZboXNqUGR3DKx9CbhOIm1QKD3fnckMXq"
+                                    href="https://www.linkedin.com/in/marwan-elasmar-phd/"
                                     data-auto-id="true"
                                     id="page-footer-http-www-linkedin-com-bellroy-1"
                                 >
 
 
 
-<svg
-  fill="#999999"
-  height="20px"
-  width="20px"
-  version="1.1"
-  id="Layer_1"
-  xmlns="http://www.w3.org/2000/svg"
-  xmlnsXlink="http://www.w3.org/1999/xlink"
-  viewBox="-143 145 512 512"
-  xmlSpace="preserve"
->
-  <g id="SVGRepo_bgCarrier" strokeWidth={0} />
-  <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
-  <g id="SVGRepo_iconCarrier">
-    {" "}
-    <path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7 c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4 c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6 c35.5,0,63.3,23,63.3,72.4V508.1z" />{" "}
-  </g>
-</svg>
+                                    <svg
+                                        fill="#999999"
+                                        height="20px"
+                                        width="20px"
+                                        version="1.1"
+                                        id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                                        viewBox="-143 145 512 512"
+                                        xmlSpace="preserve"
+                                    >
+                                        <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+                                        <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+                                        <g id="SVGRepo_iconCarrier">
+                                            {" "}
+                                            <path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7 c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4 c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6 c35.5,0,63.3,23,63.3,72.4V508.1z" />{" "}
+                                        </g>
+                                    </svg>
 
 
 
@@ -219,7 +219,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     target="_blank"
-                                    href="https://www.instagram.com/marwanasmarpowers"
+                                    href="https://www.instagram.com/marwanasmaregov"
                                     data-auto-id="true"
                                     id="page-footer-http-www-instagram-com-bellroy-1"
                                 >
@@ -264,6 +264,26 @@ const Footer = () => {
                                             className="st0"
                                             d="M14.3,44V23.9h6.5l1-7.8h-7.5v-5c0-2.3,0.6-3.8,3.7-3.8h4v-7C20.1,0.1,18.1,0,16.2,0c-5.8,0-9.7,3.7-9.7,10.3 v5.8H0v7.8h6.5V44H14.3z"
                                         />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    target="_blank"
+                                    href="https://www.tiktok.com/@marwanasmaregov"
+                                    data-auto-id="true"
+                                    id="page-footer-https-www-tiktok-com-bellroy-official-1"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 2500 2500"
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
+                                        xmlSpace="preserve"
+                                        height="20px"
+                                    >
+                                        <title>TikTok</title>
+                                        <path d="M2202.4 0H297.6C133.5 0 0 133.5 0 297.6v1904.8C0 2366.5 133.5 2500 297.6 2500h1904.8c164.1 0 297.6-133.5 297.6-297.6V297.6C2500 133.5 2366.5 0 2202.4 0m-237.8 1090.7c-13.7 1.3-27.4 2-41.1 2.1-150.4 0-290.7-75.8-373.2-201.7v686.7c0 280.3-227.2 507.6-507.6 507.6s-507.6-227.2-507.6-507.6 227.2-507.6 507.6-507.6c10.6 0 21 1 31.4 1.6V1322c-10.4-1.2-20.7-3.2-31.4-3.2-143.1 0-259 116-259 259s116 259 259 259c143.1 0 269.5-112.7 269.5-255.8l2.5-1166.3H1554c22.6 214.6 195.6 382.2 410.8 397.9v278" />
                                     </svg>
                                 </a>
                             </li>
@@ -346,9 +366,9 @@ const Footer = () => {
                     </div>
 
                     <div className="column collapsable-section" id='footId2' onClick={handleFoot2}>
-                   
 
- 
+
+
 
 
 

@@ -440,11 +440,7 @@ button:focus {
 }
 
 
-#mynewnav{
-  float: right;
-  margin-top: 3em;
-  margin-right: 12em;
-}
+
 
 @media (min-width: 1200px) {
   @media (pointer: fine) {
@@ -466,3 +462,23 @@ body {
       height: 100px !important; 
   }
 }
+
+
+@media (min-width: 1200px) and (pointer: fine) {
+  .secondaryLevel {
+      right: 10em !important; 
+  }
+
+  #page-header-homepage-1{
+    position: relative;
+    margin-left:25em;
+    margin-top:2em
+  }
+
+  #mynewnav{
+    float: right;
+    margin-top: 3em;
+    margin-right: 18em;
+  }
+}
+
