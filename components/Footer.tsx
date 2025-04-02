@@ -403,11 +403,11 @@ const Footer = () => {
                                     <span>
                                         Contact{" "}
                                         <a
-                                            href="mailto:info@marwan asmar-lb.com"
+                                            href="mailto:drmarwanasmar@gmail.com"
                                             data-auto-id="true"
                                             id="page-footer-mailto-support-bellroy-com-1"
                                         >
-                                            info@marwan asmar-lb.com
+                                            drmarwanasmar@gmail.com
                                         </a>
                                     </span>
                                 </p>

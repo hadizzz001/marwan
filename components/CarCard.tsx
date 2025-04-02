@@ -14,15 +14,7 @@ interface CarCardProps {
 const CarCard = ({ temp }: CarCardProps) => {
     const { _id, title, price, img, category } = temp;
 
-    const [isCodeValid, setIsCodeValid] = useState(false);
-
-    useEffect(() => {
-        // Check localStorage for the code
-        const storedCode = localStorage.getItem("accessCode");
-        if (storedCode === "abcd12345") {
-            setIsCodeValid(true);
-        }
-    }, []);
+ 
 
     const modifiedUrl = img[0].replace('/upload/', '/upload/w_500/q_auto/f_auto/');
 
@@ -66,11 +58,9 @@ const CarCard = ({ temp }: CarCardProps) => {
                                         className="br_text-current br_no-underline"
                                     >
                                         {title}<br />
-                                        {!isCodeValid ? (
-                                            <span></span>
-                                        ) : (
+                                         
                                             <span >${price}</span>
-                                        )}
+                                       
                                         <span
                                             className="br_absolute br_inset-0 br_z-10"
                                         />

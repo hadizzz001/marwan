@@ -8,20 +8,7 @@ const Body = () => {
   const [isActive1, setIsActive1] = useState(true);
   const [checkboxesData, setCheckboxesData] = useState([]);
   const [checkedCategories, setCheckedCategories] = useState([]); // Store selected category IDs
-  const [isCodeValid, setIsCodeValid] = useState(false);
-
-  useEffect(() => {
-    // Check localStorage for the code
-    const storedCode = localStorage.getItem("accessCode");
-    if (storedCode === "abcd12345") {
-      setIsCodeValid(true);
-    }
-  }, []);
-
-
-
-
-
+ 
 
 
 
@@ -101,15 +88,18 @@ const Body = () => {
 
   const fetchProducts = async () => {
     let url = "/api/products"; // Default: fetch all products
-    if (checkedCategories.length > 0) {
-      url = `/api/products2/${checkedCategories.join(",")}`;
-    }
-
+  
     try {
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        setTemp(data);
+  
+        // Filter products by selected categories (checkedCategories)
+        const filteredData = data.filter(product => 
+          checkedCategories.length === 0 || checkedCategories.includes(product.category)
+        );
+        
+        setTemp(filteredData);
       } else {
         console.error("Failed to fetch products");
       }
@@ -117,6 +107,7 @@ const Body = () => {
       console.error("Error fetching products:", error);
     }
   };
+  
 
   const handleCheckboxChange = (categoryId) => {
     setCheckedCategories((prev) =>
@@ -343,13 +334,10 @@ const Body = () => {
                               </div>
                               <br />
 
-                              {!isCodeValid ? (
-                                <span></span>
-                              ) : (
+                          
                                 <div className="br_text-base-sans-bold-spaced br_text-grey-600 br_inline-flex br_flex-wrap br_gap-x-2 br_items-baseline apex:br_text-white group-[.centered]/tile:br_justify-center">
                                   ${item.price}
-                                </div>
-                              )}
+                                </div> 
                             </div>
                           </div>
                         </span>

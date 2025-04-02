@@ -27,7 +27,7 @@ const PCNav = () => {
           <Link href="/shop" className="text-gray-800 hover:text-blue-700">
             Best-Selling Books
           </Link>
-          <Link href="/articles" className="text-gray-800 hover:text-blue-700">
+          <Link href="/article" className="text-gray-800 hover:text-blue-700">
           Articles
           </Link>
           <Link href="/contact" className="bg-[#000768] text-white px-6 py-3 rounded-full">
@@ -66,7 +66,7 @@ const MobileNav = () => {
 
       {/* Mobile Full-Screen Menu */}
       {isOpen && (
-        <div className="fixed inset-0 bg-white flex flex-col items-center justify-center space-y-6 text-2xl">
+        <div id="navidnew" className="fixed inset-0 bg-white flex flex-col items-center justify-center space-y-6 text-2xl">
           {/* Close Button */}
           <button
             className="absolute top-6 right-6 text-gray-800"

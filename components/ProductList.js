@@ -48,45 +48,22 @@ const YourComponent = () => {
 
 
 
-                                <div className="  ProductTile-SliderContainer ProductTile-SliderContainer--YMAL px-3" data-product-list-category="ymal-slider">
+                                <div className="mt-10  ProductTile-SliderContainer ProductTile-SliderContainer--YMAL px-3" data-product-list-category="ymal-slider">
 
                                     <div className="ProductTile-SliderContainer-Title br_text-3xl-serif br_text-[#333] " style={{ textAlign: "left", textAlign: "left", fontSize: "1.3em", fontWeight: "bold", fontFamily: 'Manrope' }}>  
-                                    <a href={`/search?cat=yes`}>New Arrivals</a>
-                                        <span style={{ position: "absolute", right: "1em" }}><svg
-                                            fill="#000000"
-                                            viewBox="0 0 24 24"
-                                            id="right-arrow"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            className="icon line"
-                                            width={42}
-                                        >
-                                            <g id="SVGRepo_bgCarrier" strokeWidth={0} />
-                                            <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
-                                            <g id="SVGRepo_iconCarrier">
-                                                <path
-                                                    id="primary"
-                                                    d="M3,12H21m-3,3,3-3L18,9"
-                                                    style={{
-                                                        fill: "none",
-                                                        stroke: "#000000",
-                                                        strokeLinecap: "round",
-                                                        strokeLinejoin: "round",
-                                                        strokeWidth: "1.5"
-                                                    }}
-                                                />
-                                            </g>
-                                        </svg>
-                                        </span>
+                                    <h2 className="text-[38px] font-bold text-center mb-5">
+        Our books
+      </h2> 
                                     </div>
 
                                     {allTemps.length > 0 ? (
                                         <section className=' mb-5' style={{ maxWidth: "100%" }}>
                                             <Swiper spaceBetween={5} loop breakpoints={{
                                                 150: {
-                                                    slidesPerView: 3,
+                                                    slidesPerView: 1,
                                                 },
                                                 768: {
-                                                    slidesPerView: 6,
+                                                    slidesPerView: 3,
                                                 },
                                             }}>
                                                 <div className="home__cars-wrapper">

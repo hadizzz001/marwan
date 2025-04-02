@@ -13,8 +13,7 @@ import 'swiper/css';
 import Head from 'next/head'
 
 const Page = () => {
-  const [code, setCode] = useState("");
-  const [isCodeValid, setIsCodeValid] = useState(false);
+  const [code, setCode] = useState(""); 
   const [translateXValue, setTranslateXValue] = useState(0);
   const [isActive1, setIsActive1] = useState(true);
   const [isActive2, setIsActive2] = useState(true);
@@ -56,7 +55,7 @@ const Page = () => {
     };
   
     fetchData();
-  }, []); // Add 'search' as a dependency to re-fetch when it changes
+  }, []);  
   
 
 
@@ -162,22 +161,7 @@ const Page = () => {
 
 
 
-  useEffect(() => {
-    // Check localStorage for the code
-    const storedCode = localStorage.getItem("accessCode");
-    if (storedCode === "abcd12345") {
-      setIsCodeValid(true);
-    }
-  }, []);
-
-  const handleCodeSubmit = () => {
-    if (code === "abcd12345") {
-      localStorage.setItem("accessCode", code);
-      setIsCodeValid(true);
-    } else {
-      alert("Invalid Code");
-    }
-  };
+ 
 
   const handleClickr = () => { 
     sessionStorage.setItem("imgg", imgg);
@@ -289,10 +273,7 @@ const Page = () => {
                     </h1>
                     <p className='mb-2'>
                       Category: {cat}
-                    </p>
-                    <p className='mb-2'>
-                      Brand: {brand}
-                    </p>
+                    </p> 
  
                   </span>
                   <div className="ApexPriceAndFreeShippingWrapper">
@@ -305,18 +286,14 @@ const Page = () => {
 
 
                     <div>
-                      {!isCodeValid ? (
-                        <div>
-                        </div>
-                      ) : (
+                     
                         <span className="ProvidersSingleProduct--selected">
                           <div className="br_flex">
                             <span className="price">
                               <span className="price_value" >${price}</span>
                             </span>
                           </div>
-                        </span>
-                      )}
+                        </span> 
                     </div>
 
 
@@ -338,10 +315,7 @@ const Page = () => {
                   <hr />
                   <div className="ProductSelector_IntroBlurb">
                     <span className="ProvidersIfSelectedProductMatchesFilter">
-                      <p
-
-                        dangerouslySetInnerHTML={{ __html: desc }}
-                      /><br />
+                      <p dangerouslySetInnerHTML={{ __html: desc }} /><br />
                     </span>
                   </div>
                   <div className="bagsFeaturesGrid__gridWrapper">
@@ -363,46 +337,7 @@ const Page = () => {
                       </>
                     ) : (
                       <div>
-                        {!isCodeValid ? (
-                          <div>
-                            {imgs && imgs?.length > 0 ? (
-                              <>
-                                <a
-                                  href={`https://wa.me/+9613682289?text=${imgs[0]}`}
-                                  target="_blank"
-                                  className="whatsapp-btn"
-                                  style={{
-                                    display: "block",
-                                    textAlign: "center",
-                                    padding: "10px",
-                                    backgroundColor: "#25D366",
-                                    color: "white",
-                                    borderRadius: "5px",
-                                    textDecoration: "none",
-                                    marginBottom: "10px",
-                                  }}
-                                >
-                                  GET PRICE NOW!
-                                </a>
-                                <input
-                                  type="text"
-                                  placeholder="Enter Code"
-                                  value={code}
-                                  onChange={(e) => setCode(e.target.value)}
-                                  style={{ padding: "5px", marginRight: "5px" }}
-                                />
-                                <button onClick={handleCodeSubmit} style={{ padding: "5px 10px" }}>
-                                  Submit
-                                </button>
-                              </>
-                            ) : (
-                              <div className='container'>
-                                <h2 className='text-black text-xl dont-bold'>...</h2>
-                              </div>
-                            )}
-
-                          </div>
-                        ) : (
+                       
                           <form onSubmit={handleSubmit}>
                             <div className="">
                               <QuantitySelector initialQty={quantity} onChange={setQuantity} />
@@ -416,8 +351,7 @@ const Page = () => {
                               </div>
                               <div className=""></div>
                             </div>
-                          </form>
-                        )}
+                          </form> 
                       </div>
                     )}
                     <br />
