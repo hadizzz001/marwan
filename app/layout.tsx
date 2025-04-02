@@ -9,8 +9,7 @@ import { useSearchParams } from 'next/navigation'
 import { CartProvider } from './context/CartContext';
 import { BooleanProvider } from './context/CartBoolContext'; 
 import GifLoader from '../components/GifLoader'
-import WhatsAppIcon from '../components/WhatsAppIcon';
-import Script from "next/script";
+import WhatsAppIcon from '../components/WhatsAppIcon'; 
 import { GoogleAnalytics } from '@next/third-parties/google'
 
  
@@ -43,8 +42,12 @@ export default function RootLayout({
     content="At marwan asmar, we're reshaping the way businesses connect."
     name="description" 
   />
-  <meta content="marwan asmar" name="keywords" property="abbasbaba, shoes, men, women" />
-
+  <meta content="marwan asmar" name="keywords" property="trainer, book, author, dedicated, lebanon, kuwait, ksa, syria, jordan" />
+  <meta
+    content="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743077533/ltbd3bmbq7lecu2pag7b.png"
+    name=""
+    property="og:image"
+  />
  
  
   <meta content="#ffffff" name="msapplication-TileColor" />
@@ -98,7 +101,7 @@ export default function RootLayout({
           <Navbar2 />
           <WhatsAppIcon />
           {children}
-          <GoogleAnalytics gaId="G-GKVJEXB18C" />
+          {/* <GoogleAnalytics gaId="G-GKVJEXB18C" /> */}
           <Footer />
         </CartProvider>
         </BooleanProvider>
