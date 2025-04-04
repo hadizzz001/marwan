@@ -44,7 +44,7 @@ export default function RootLayout({
   />
   <meta content="marwan asmar" name="keywords" property="trainer, book, author, dedicated, lebanon, kuwait, ksa, syria, jordan" />
   <meta
-    content="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743077533/ltbd3bmbq7lecu2pag7b.png"
+    content="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743798640/l9l0der0d6ydzuum7uey.png"
     name=""
     property="og:image"
   />

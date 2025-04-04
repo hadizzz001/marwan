@@ -10,7 +10,7 @@ const PCNav = () => {
         {/* Logo */}
         <Link href="/">
           <img
-            src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743077533/ltbd3bmbq7lecu2pag7b.png"
+            src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743798640/l9l0der0d6ydzuum7uey.png"
             alt="Logo"
             width={150}
           />
@@ -50,7 +50,7 @@ const MobileNav = () => {
         <div className="absolute left-1/2 transform -translate-x-1/2">
           <Link href="/">
             <img
-              src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743077533/ltbd3bmbq7lecu2pag7b.png"
+              src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743798640/l9l0der0d6ydzuum7uey.png"
               alt="Logo"
               
               width={100}

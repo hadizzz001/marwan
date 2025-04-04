@@ -45,7 +45,7 @@ const ImgLoader = () => {
             }}
           >
             <img
-              src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743077533/ltbd3bmbq7lecu2pag7b.png"
+              src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743798640/l9l0der0d6ydzuum7uey.png"
               alt="Loading"
               style={{
                 width: '150%', // Ensure the image scales to fill the container
