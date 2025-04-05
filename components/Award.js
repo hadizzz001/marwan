@@ -16,8 +16,8 @@ const ServicesGrid = () => {
 
   const gridStyle = {
     display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)", // 3 images per row
-    gap: "16px",
+    gridTemplateColumns: "repeat(3, 1fr)",
+    gap: "24px",
     width: "100%",
   };
 
@@ -34,10 +34,24 @@ const ServicesGrid = () => {
     marginBottom: "40px",
   };
 
+  const imageWrapperStyle = {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  };
+
   const imageStyle = {
     width: "100%",
     height: "33vh",
-    objectFit: "cover",
+    objectFit: "contain", // Show full image without cropping
+    backgroundColor: "#f0f0f0", // Optional: light background for contrast
+  };
+
+  const linkStyle = {
+    marginTop: "12px",
+    color: "#0070f3",
+    textDecoration: "underline",
+    fontSize: "14px",
   };
 
   return (
@@ -45,12 +59,21 @@ const ServicesGrid = () => {
       <h2 style={headingStyle}>International Award</h2>
       <div style={gridStyle}>
         {galleries.map((gallery) => (
-          <img
-            key={gallery._id}
-            src={gallery.img[0]} // Use only the first image
-            alt="Award Gallery"
-            style={imageStyle}
-          />
+          <div key={gallery._id} style={imageWrapperStyle}>
+            <img
+              src={gallery.img[0]}
+              alt="Award Gallery"
+              style={imageStyle}
+            />
+            <a
+              href="https://internationalcivilitytrainer.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={linkStyle}
+            >
+              https://internationalcivilitytrainer.com/
+            </a>
+          </div>
         ))}
       </div>
     </div>
