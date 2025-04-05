@@ -1,6 +1,5 @@
 "use client";
-import { useState } from "react";
-import Link from "next/link";
+import { useState } from "react"; 
 import { Menu, X } from "lucide-react";
 
 const PCNav = () => {
@@ -8,35 +7,35 @@ const PCNav = () => {
     <nav className="hidden md:flex bg-white shadow-md">
       <div className="container mx-auto flex items-center justify-between p-4">
         {/* Logo */}
-        <Link href="/">
+        <a href="/">
           <img
             src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743798640/l9l0der0d6ydzuum7uey.png"
             alt="Logo"
             width={175}
           />
-        </Link>
+        </a>
 
-        {/* Navigation Links (3x Larger) */}
+        {/* Navigation as (3x Larger) */}
         <div className="flex items-center space-x-16 text-[18px]">
-          <Link href="/" className="text-gray-800 hover:text-blue-700">
+          <a href="/" className="text-gray-800 hover:text-blue-700">
             Home
-          </Link>
-          <Link href="/article" className="text-gray-800 hover:text-blue-700">
+          </a>
+          <a href="/article" className="text-gray-800 hover:text-blue-700">
             Articles
-          </Link>
-          <Link href="/gallery" className="text-gray-800 hover:text-blue-700">
+          </a>
+          <a href="/gallery" className="text-gray-800 hover:text-blue-700">
             Gallery
-          </Link>
-          <Link href="/about" className="text-gray-800 hover:text-blue-700">
+          </a>
+          <a href="/about" className="text-gray-800 hover:text-blue-700">
             Book a Consultancy
-          </Link>
-          <Link href="/shop" className="text-gray-800 hover:text-blue-700">
+          </a>
+          <a href="/shop" className="text-gray-800 hover:text-blue-700">
             Best-Selling Books
-          </Link>
+          </a>
 
-          <Link href="/contact" className="bg-[#000768] text-white px-6 py-3 rounded-full">
+          <a href="/contact" className="bg-[#000768] text-white px-6 py-3 rounded-full">
             Let's Talk
-          </Link>
+          </a>
 
         </div>
       </div>
@@ -52,14 +51,14 @@ const MobileNav = () => {
       <div className="container mx-auto flex items-center justify-between p-12">
         {/* Centered Logo */}
         <div className="absolute left-1/2 transform -translate-x-1/2">
-          <Link href="/">
+          <a href="/">
             <img
               src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743798640/l9l0der0d6ydzuum7uey.png"
               alt="Logo"
 
               width={100}
             />
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -79,30 +78,30 @@ const MobileNav = () => {
             <X size={32} />
           </button>
 
-          {/* Navigation Links */}
-          <Link href="/" className="text-gray-800" onClick={() => setIsOpen(false)}>
+          {/* Navigation as */}
+          <a href="/" className="text-gray-800" onClick={() => setIsOpen(false)}>
             Home
-          </Link>
-          <Link href="/articles" className="text-gray-800" onClick={() => setIsOpen(false)}>
+          </a>
+          <a href="/article" className="text-gray-800" onClick={() => setIsOpen(false)}>
             Articles
-          </Link>
-          <Link href="/gallery" className="text-gray-800 hover:text-blue-700">
+          </a>
+          <a href="/gallery" className="text-gray-800 hover:text-blue-700">
             Gallery
-          </Link>
-          <Link href="/about" className="text-gray-800" onClick={() => setIsOpen(false)}>
+          </a>
+          <a href="/about" className="text-gray-800" onClick={() => setIsOpen(false)}>
             Book a Consultancy
-          </Link>
-          <Link href="/shop" className="text-gray-800" onClick={() => setIsOpen(false)}>
+          </a>
+          <a href="/shop" className="text-gray-800" onClick={() => setIsOpen(false)}>
             Best-Selling Books
-          </Link>
+          </a>
 
-          <Link
+          <a
             href="/contact"
             className="bg-[#000768] text-white px-6 py-3 rounded-full"
             onClick={() => setIsOpen(false)}
           >
             Let's Talk
-          </Link>
+          </a>
         </div>
       )}
     </nav>

@@ -19,7 +19,7 @@ const Article = () => {
   }, []);
   
   return (
-    <section className="pt-10 lg:px-20 md:px-10 px-10 text-blue-950 mt-20">
+    <section className="pt-10 lg:px-20 md:px-10 px-10 text-blue-950 mt-5">
       <h2 className="text-[38px] font-bold text-center">My Articles</h2>
       
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 pt-9">

@@ -43,8 +43,7 @@ const ServicesGrid = () => {
   const containerStyle = {
     width: "100%",
     textAlign: "center",
-    padding: "32px 0",
-    marginTop: "80px",
+    padding: "32px 0", 
   };
 
   const headingStyle = {

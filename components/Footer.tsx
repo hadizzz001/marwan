@@ -219,7 +219,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     target="_blank"
-                                    href="https://www.instagram.com/marwanasmaregov"
+                                    href="https://www.instagram.com/marwanasmarofficial/"
                                     data-auto-id="true"
                                     id="page-footer-http-www-instagram-com-bellroy-1"
                                 >
