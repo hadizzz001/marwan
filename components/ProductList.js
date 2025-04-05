@@ -52,7 +52,7 @@ const YourComponent = () => {
 
                                     <div className="ProductTile-SliderContainer-Title br_text-3xl-serif br_text-[#333] " style={{ textAlign: "left", textAlign: "left", fontSize: "1.3em", fontWeight: "bold", fontFamily: 'Manrope' }}>  
                                     <h2 className="text-[38px] font-bold text-center mb-5">
-        Our books
+                                    Best-Selling Books
       </h2> 
                                     </div>
 
