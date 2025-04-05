@@ -22,7 +22,7 @@ const VideoGrid = () => {
   return (
     <div className="container mx-auto p-6 mt-20">
       <h2 className="text-[38px] font-bold text-center">
-        Our <span>Videos</span>
+        My <span>Videos</span>
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
         {videos.map((video) => (
