@@ -270,7 +270,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     target="_blank"
-                                    href="https://www.tiktok.com/@marwanasmaregov"
+                                    href="https://www.tiktok.com/@marwanasmarofficial"
                                     data-auto-id="true"
                                     id="page-footer-https-www-tiktok-com-bellroy-official-1"
                                 >
