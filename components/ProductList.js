@@ -58,7 +58,11 @@ const YourComponent = () => {
 
                                     {allTemps.length > 0 ? (
                                         <section className=' mb-5' style={{ maxWidth: "100%" }}>
-                                            <Swiper spaceBetween={5} loop breakpoints={{
+                                            <Swiper spaceBetween={5} modules={[Autoplay]} autoplay={{
+                                                delay: 2000,
+                                                stopOnLastSlide: false,
+                                                reverseDirection: true
+                                              }} loop breakpoints={{
                                                 150: {
                                                     slidesPerView: 1,
                                                 },

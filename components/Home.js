@@ -27,7 +27,7 @@ const Home = () => {
           <div>
           <p className='max-w-lg mt-3 text-xl leading-relaxed text-[#222222]  md:mt-8' dangerouslySetInnerHTML={{ __html: data?.desc }} />
           </div>
-          <div className="relative">
+          <div className="relative" style={{marginTop: "-5em"}}>
             {/* Background Image */}
             <img
               className="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2"
