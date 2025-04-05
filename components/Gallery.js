@@ -22,8 +22,6 @@ const ServicesGrid = () => {
             acc.children.push(gallery);
           } else if (gallery.type === "Corporate Training") {
             acc.corporationTraining.push(gallery);
-          } else if (gallery.type === "E-Government Training") {
-            acc.egovTraining.push(gallery);
           }
           return acc;
         },
@@ -64,6 +62,30 @@ const ServicesGrid = () => {
 
   return (
     <>
+          {/* Corporation Training Gallery */}
+          <div style={containerStyle}>
+        <h2 style={headingStyle}>Corporate Training Gallery</h2>
+        <div style={gridStyle}>
+          {galleries.corporationTraining.map((gallery, index) => (
+            <div key={gallery._id} style={{display:'contents'}}>
+              {gallery.img.map((imageUrl, idx) => (
+                <img
+                  key={idx}
+                  src={imageUrl}
+                  alt={`Corporate Training ${idx + 1}`}
+                  width={500}
+                  height={300}
+                  style={imageStyle}
+                  priority
+                />
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+
+
+      
       {/* Children and youth gallery */}
       <div style={containerStyle}>
         <h2 style={headingStyle}>Children and Youth Gallery</h2>
@@ -86,27 +108,7 @@ const ServicesGrid = () => {
         </div>
       </div>
 
-      {/* Corporation Training Gallery */}
-      <div style={containerStyle}>
-        <h2 style={headingStyle}>Corporate Training Gallery</h2>
-        <div style={gridStyle}>
-          {galleries.corporationTraining.map((gallery, index) => (
-            <div key={gallery._id} style={{display:'contents'}}>
-              {gallery.img.map((imageUrl, idx) => (
-                <img
-                  key={idx}
-                  src={imageUrl}
-                  alt={`Corporate Training ${idx + 1}`}
-                  width={500}
-                  height={300}
-                  style={imageStyle}
-                  priority
-                />
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
+
 
       
     </>
