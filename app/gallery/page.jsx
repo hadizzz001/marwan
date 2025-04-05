@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 const ServicesGrid = () => {
   const [galleries, setGalleries] = useState({
@@ -9,25 +8,25 @@ const ServicesGrid = () => {
     egovTraining: [],
   });
 
+  const [zoomImage, setZoomImage] = useState(null); // holds the selected image URL
+
   useEffect(() => {
-    // Fetch galleries from API
     const fetchGalleries = async () => {
-      const res = await fetch("/api/gallery"); // Your API endpoint
+      const res = await fetch("/api/gallery");
       const data = await res.json();
 
-      // Categorize galleries based on their type
       const categorizedGalleries = data.reduce(
         (acc, gallery) => {
           if (gallery.type === "Children and youth") {
             acc.children.push(gallery);
           } else if (gallery.type === "Corporate Training") {
             acc.corporationTraining.push(gallery);
-          } 
+          }
           return acc;
         },
         { children: [], corporationTraining: [], egovTraining: [] }
       );
-      
+
       setGalleries(categorizedGalleries);
     };
 
@@ -36,8 +35,8 @@ const ServicesGrid = () => {
 
   const gridStyle = {
     display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)", // 3 images per row
-    gap: "16px", // Space between images
+    gridTemplateColumns: "repeat(3, 1fr)",
+    gap: "16px",
     width: "100%",
   };
 
@@ -58,27 +57,43 @@ const ServicesGrid = () => {
     width: "100%",
     height: "33vh",
     objectFit: "cover",
+    cursor: "pointer",
+  };
+
+  const modalOverlayStyle = {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100vw",
+    height: "100vh",
+    backgroundColor: "rgba(0,0,0,0.8)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    zIndex: 1000,
+  };
+
+  const modalImageStyle = {
+    maxWidth: "90vw",
+    maxHeight: "90vh",
+    borderRadius: "8px",
   };
 
   return (
     <>
-
-
       {/* Corporation Training Gallery */}
       <div style={containerStyle}>
         <h2 style={headingStyle}>Corporate Training Gallery</h2>
         <div style={gridStyle}>
-          {galleries.corporationTraining.map((gallery, index) => (
-            <div key={gallery._id} style={{display:'contents'}}>
+          {galleries.corporationTraining.map((gallery) => (
+            <div key={gallery._id} style={{ display: "contents" }}>
               {gallery.img.map((imageUrl, idx) => (
                 <img
                   key={idx}
                   src={imageUrl}
                   alt={`Corporate Training ${idx + 1}`}
-                  width={500}
-                  height={300}
                   style={imageStyle}
-                  priority
+                  onClick={() => setZoomImage(imageUrl)}
                 />
               ))}
             </div>
@@ -86,21 +101,19 @@ const ServicesGrid = () => {
         </div>
       </div>
 
-            {/* Children and youth gallery */}
-            <div style={containerStyle}>
+      {/* Children and Youth Gallery */}
+      <div style={containerStyle}>
         <h2 style={headingStyle}>Children and Youth Training Gallery</h2>
         <div style={gridStyle}>
-          {galleries.children.map((gallery, index) => (
-            <div key={gallery._id} style={{display:'contents'}}>
+          {galleries.children.map((gallery) => (
+            <div key={gallery._id} style={{ display: "contents" }}>
               {gallery.img.map((imageUrl, idx) => (
                 <img
                   key={idx}
                   src={imageUrl}
                   alt={`Children Gallery ${idx + 1}`}
-                  width={500}
-                  height={300}
                   style={imageStyle}
-                  priority
+                  onClick={() => setZoomImage(imageUrl)}
                 />
               ))}
             </div>
@@ -108,7 +121,17 @@ const ServicesGrid = () => {
         </div>
       </div>
 
-      
+      {/* Zoom Image Modal */}
+      {zoomImage && (
+        <div style={modalOverlayStyle} onClick={() => setZoomImage(null)}>
+          <img
+            src={zoomImage}
+            alt="Zoomed"
+            style={modalImageStyle}
+            onClick={(e) => e.stopPropagation()} // Prevent close when clicking on the image
+          />
+        </div>
+      )}
     </>
   );
 };
