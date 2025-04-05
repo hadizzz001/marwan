@@ -12,7 +12,7 @@ const PCNav = () => {
           <img
             src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743798640/l9l0der0d6ydzuum7uey.png"
             alt="Logo"
-            width={150}
+            width={175}
           />
         </Link>
 

@@ -20,7 +20,7 @@ const ServicesGrid = () => {
         (acc, gallery) => {
           if (gallery.type === "Children and youth") {
             acc.children.push(gallery);
-          } else if (gallery.type === "Corporation Training") {
+          } else if (gallery.type === "Corporate Training") {
             acc.corporationTraining.push(gallery);
           } else if (gallery.type === "E-Government Training") {
             acc.egovTraining.push(gallery);
@@ -88,7 +88,7 @@ const ServicesGrid = () => {
 
       {/* Corporation Training Gallery */}
       <div style={containerStyle}>
-        <h2 style={headingStyle}>Corporation Training Gallery</h2>
+        <h2 style={headingStyle}>Corporate Training Gallery</h2>
         <div style={gridStyle}>
           {galleries.corporationTraining.map((gallery, index) => (
             <div key={gallery._id} style={{display:'contents'}}>
@@ -96,7 +96,7 @@ const ServicesGrid = () => {
                 <img
                   key={idx}
                   src={imageUrl}
-                  alt={`Corporation Training ${idx + 1}`}
+                  alt={`Corporate Training ${idx + 1}`}
                   width={500}
                   height={300}
                   style={imageStyle}
