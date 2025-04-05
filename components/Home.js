@@ -25,7 +25,7 @@ const Home = () => {
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid items-center grid-cols-1 md:grid-cols-2">
           <div>
-          <p className='max-w-lg mt-3 text-xl leading-relaxed text-[#222222]  md:mt-8' dangerouslySetInnerHTML={{ __html: data?.desc }} />
+          <p className='max-w-lg mt-3 text-l leading-relaxed text-[#222222] ' dangerouslySetInnerHTML={{ __html: data?.desc }} />
           </div>
           <div className="relative" >
            
