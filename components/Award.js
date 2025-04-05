@@ -36,13 +36,10 @@ const ServicesGrid = () => {
   };
 
   const imageStyle = {
-    width: "80%",
-    maxWidth: "800px",
-    height: "70vh",
+    width: "100%",
+    maxWidth: "800px", 
     objectFit: "contain",
-    backgroundColor: "#f9f9f9",
-    borderRadius: "12px",
-    boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+    backgroundColor: "#f9f9f9", 
     transition: "transform 0.3s ease",
   };
 
