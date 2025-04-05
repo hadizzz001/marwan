@@ -6,6 +6,7 @@ import Video from './Video';
 import ProductList from './ProductList'; 
 import Home from './Home'; 
 import Article from './Article'; 
+import Award from './Award'; 
 
 
 
@@ -143,6 +144,7 @@ const Body = () => {
 <Home/> 
 
 
+<Award/> 
 <Article/> 
 
 <Video/>

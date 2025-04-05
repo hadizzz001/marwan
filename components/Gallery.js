@@ -88,7 +88,7 @@ const ServicesGrid = () => {
       
       {/* Children and youth gallery */}
       <div style={containerStyle}>
-        <h2 style={headingStyle}>Children and Youth Gallery</h2>
+        <h2 style={headingStyle}>Children and Youth Training Gallery</h2>
         <div style={gridStyle}>
           {galleries.children.map((gallery, index) => (
             <div key={gallery._id} style={{display:'contents'}}>
