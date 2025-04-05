@@ -27,7 +27,7 @@ const Home = () => {
           <div>
           <p className='max-w-lg mt-3 text-xl leading-relaxed text-[#222222]  md:mt-8' dangerouslySetInnerHTML={{ __html: data?.desc }} />
           </div>
-          <div className="relative" style={{marginTop: "-5em"}}>
+          <div className="relative" >
             {/* Background Image */}
             <img
               className="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2"
@@ -40,6 +40,7 @@ const Home = () => {
                 className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
                 src={data.img[0]} // Dynamically set the fetched image
                 alt="Fetched Content"
+                style={{marginTop:"5em"}}
               />
             )}
           </div>
