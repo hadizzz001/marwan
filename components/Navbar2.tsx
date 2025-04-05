@@ -21,18 +21,22 @@ const PCNav = () => {
           <Link href="/" className="text-gray-800 hover:text-blue-700">
             Home
           </Link>
+          <Link href="/article" className="text-gray-800 hover:text-blue-700">
+            Articles
+          </Link>
+          <Link href="/gallery" className="text-gray-800 hover:text-blue-700">
+            Gallery
+          </Link>
           <Link href="/about" className="text-gray-800 hover:text-blue-700">
             Book a Consultancy
           </Link>
           <Link href="/shop" className="text-gray-800 hover:text-blue-700">
             Best-Selling Books
           </Link>
-          <Link href="/article" className="text-gray-800 hover:text-blue-700">
-          Articles
-          </Link>
+
           <Link href="/contact" className="bg-[#000768] text-white px-6 py-3 rounded-full">
-  Let's Talk
-</Link>
+            Let's Talk
+          </Link>
 
         </div>
       </div>
@@ -52,7 +56,7 @@ const MobileNav = () => {
             <img
               src="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743798640/l9l0der0d6ydzuum7uey.png"
               alt="Logo"
-              
+
               width={100}
             />
           </Link>
@@ -79,15 +83,19 @@ const MobileNav = () => {
           <Link href="/" className="text-gray-800" onClick={() => setIsOpen(false)}>
             Home
           </Link>
+          <Link href="/articles" className="text-gray-800" onClick={() => setIsOpen(false)}>
+            Articles
+          </Link>
+          <Link href="/gallery" className="text-gray-800 hover:text-blue-700">
+            Gallery
+          </Link>
           <Link href="/about" className="text-gray-800" onClick={() => setIsOpen(false)}>
             Book a Consultancy
           </Link>
           <Link href="/shop" className="text-gray-800" onClick={() => setIsOpen(false)}>
             Best-Selling Books
           </Link>
-          <Link href="/articles" className="text-gray-800" onClick={() => setIsOpen(false)}>
-          Articles
-          </Link>
+
           <Link
             href="/contact"
             className="bg-[#000768] text-white px-6 py-3 rounded-full"
