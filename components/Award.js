@@ -14,13 +14,6 @@ const ServicesGrid = () => {
     fetchGalleries();
   }, []);
 
-  const gridStyle = {
-    display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)",
-    gap: "24px",
-    width: "100%",
-  };
-
   const containerStyle = {
     width: "100%",
     textAlign: "center",
@@ -29,7 +22,7 @@ const ServicesGrid = () => {
   };
 
   const headingStyle = {
-    fontSize: "38px",
+    fontSize: "42px",
     fontWeight: "bold",
     marginBottom: "40px",
   };
@@ -41,41 +34,42 @@ const ServicesGrid = () => {
   };
 
   const imageStyle = {
-    width: "100%",
-    height: "33vh",
-    objectFit: "contain", // Show full image without cropping
-    backgroundColor: "#f0f0f0", // Optional: light background for contrast
+    width: "80%", // Bigger width
+    maxWidth: "800px",
+    height: "70vh", // Larger height
+    objectFit: "contain",
+    backgroundColor: "#f9f9f9", // Optional
+    borderRadius: "12px",
+    boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
   };
 
   const linkStyle = {
-    marginTop: "12px",
+    marginTop: "20px",
     color: "#0070f3",
     textDecoration: "underline",
-    fontSize: "14px",
+    fontSize: "16px",
   };
 
   return (
     <div style={containerStyle}>
       <h2 style={headingStyle}>International Award</h2>
-      <div style={gridStyle}>
-        {galleries.map((gallery) => (
-          <div key={gallery._id} style={imageWrapperStyle}>
-            <img
-              src={gallery.img[0]}
-              alt="Award Gallery"
-              style={imageStyle}
-            />
-            <a
-              href="https://internationalcivilitytrainer.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={linkStyle}
-            >
-              https://internationalcivilitytrainer.com/
-            </a>
-          </div>
-        ))}
-      </div>
+      {galleries.length > 0 && (
+        <div style={imageWrapperStyle}>
+          <img
+            src={galleries[0].img[0]}
+            alt="Award Gallery"
+            style={imageStyle}
+          />
+          <a
+            href="https://internationalcivilitytrainer.com/civility-expert-marwan-asmar-offers-live-civility-trainer-program-in-lebanon/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={linkStyle}
+          >
+            https://internationalcivilitytrainer.com/civility-expert-marwan-asmar-offers-live-civility-trainer-program-in-lebanon/
+          </a>
+        </div>
+      )}
     </div>
   );
 };
