@@ -48,6 +48,8 @@ export default function RootLayout({
     name=""
     property="og:image"
   />
+
+<meta name="twitter:image" content="https://res.cloudinary.com/dea3r5dn7/image/upload/v1743798640/l9l0der0d6ydzuum7uey.png" />
  
  
   <meta content="#ffffff" name="msapplication-TileColor" />
@@ -86,7 +88,11 @@ export default function RootLayout({
 <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet"/> 
  
 
- 
+<link rel="icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico" />
+
   
 </>
 
