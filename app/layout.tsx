@@ -37,7 +37,8 @@ export default function RootLayout({
         <title>
           marwan asmar
         </title>
-        <link rel="icon" href="/favicon.png" />  
+        <link rel="icon" href="/favicon.png?v=2" type="image/png" />
+
 
         <meta
           content="At marwan asmar, we're reshaping the way businesses connect."
